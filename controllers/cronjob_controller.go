@@ -88,7 +88,7 @@ var (
 
 func (r *CronJobReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Result, error) {
 	log := log.FromContext(ctx)
-
+	log.Info("we did it!")
 	/*
 		### 1: Load the CronJob by name
 
